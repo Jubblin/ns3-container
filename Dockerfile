@@ -1,4 +1,4 @@
-FROM ubuntu:focal
+FROM ubuntu:noble
 
 ARG NS3_VERSION=3.32
 ARG DEBIAN_FRONTEND=noninteractive
