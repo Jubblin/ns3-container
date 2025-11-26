@@ -3,11 +3,13 @@ FROM ubuntu:focal
 ARG NS3_VERSION=3.32
 ARG DEBIAN_FRONTEND=noninteractive
 ARG BUILD_PROFILE=debug
+ARG IMAGE_URL="https://github.com/MarshallAsch/ns3-container.git"
+ARG IMAGE_SRC="https://github.com/MarshallAsch/ns3-container.git"
 
 LABEL org.opencontainers.version="v1.0.0"
 LABEL org.opencontainers.image.authors="Marshall Asch <masch@uoguelph.ca> (https://marshallasch.ca)"
-LABEL org.opencontainers.image.url="https://github.com/MarshallAsch/ns3-container.git"
-LABEL org.opencontainers.image.source="https://github.com/MarshallAsch/ns3-container.git"
+LABEL org.opencontainers.image.url=${IMAGE_URL}
+LABEL org.opencontainers.image.source="${IMAGE_SRC}
 LABEL org.opencontainers.image.vendor="Marshall Asch"
 LABEL org.opencontainers.image.licenses="ISC"
 LABEL org.opencontainers.image.title="ns-3 docker container"
